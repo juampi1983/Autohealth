@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AUTOHEALTH - Confiá en tu auto!</title>
+		<link rel="icon" type="image/jpg" href="img/favicon.png"/>
+		<link rel="stylesheet" href="css/style2.css">
+	</head>
+	<body>
+		<div class="grid_contenedor">
+			<header class="base">
+				<nav class="menu">
+					<a href="index.html">
+						<img src="img/autohealth_banner.jpg" alt="Logo de autohealth" class="logo_nav">
+					</a>
+					<ul>
+						<li>
+							<a href="index.html" class="text-bold text-underline">Inicio</a>
+						</li>
+						<li>
+							<a href="views/descargas.html">Descargas</a>
+						</li>
+						<li>
+							<a href="views/contacto.html">Contacto</a>
+						</li>
+						<li>
+							<a href="views/blog.html">Blog</a>
+						</li>	
+						<li>
+							<a href="views/registrate.html">Registrate</a>
+						</li>	
+					</ul>
+				</nav>
+				<!-- 	<img src="img/mechanic-banner.jpg" alt="Imagen heroe" id="img_heroe"> -->
+			</header>
+			<!-- ends head -->
+			<main class="main">
+				<section id="ventajas">
+					<article>
+						<h1 class="text-bold text-center">Ventajas de usar nuestro sistema:</h1>
+					<div class="contenidoart">
+						<img src="img/volante.jpg" alt="volante de automóvil" class="img_art">
+
+						<p class="text-center">Tener un automóvil es una ventaja en grandes ciudades como CHILE y alrededores, pero también es un gasto enorme. El combustible y el mantenimiento de un vehículo pueden significar mucho dinero, pero con la app <strong>Autohealth</strong> podrán gestionar los mantenimientos de su vehículo y evitar averias aún mas costosas.
+						<br>	
+						<br>
+						La app <strong>Autohealth</strong> la encuentran en la App Store y en la Google Play Store y se puede ingresar con las cuentas de Facebook, Gmail o creando un usuario dentro la misma plataforma. Esta aplicación pesa apenas 49.6 MB para iPhone y se encuentra en 66 idiomas, entre los que está, por supuesto, el español.
+						</p>
+					</div>
+					</article>
+				</section>
+					<!-- ventajas de usar nuestro sistema -->
+				<section class="formulario">
+					<h2 class="text-bold text-center">Dejanos tus comentarios!</h2>
+
+					<form action="envio.php"> 
+						<fieldset>
+							<legend class="text-bold">Info personal</legend>
+								<label for="nombre">Nombre y Apellido</label>
+								<input type="text" id="nombre" placeholder="John Doe">
+								<label for="mail">Mail</label>
+								<input type="mail" id="mail" placeholder="correo@ejemplo.com">
+						</fieldset>
+						<fieldset>	
+								<legend class="text-bold">Info comercial</legend>
+									<label for="version">Que versión te interesa ?</label>
+									<select name="Qué versión te interesa más?" id="version">
+										<option value="lite">Lite</option>
+										<option value="home">Home</option>
+										<option value="pro">Pro</option>
+									</select>
+									<br><br>
+									<label for="os">Sistema operativo</label>
+									<br>
+									<label for="android">Android</label>
+									<input type="radio" id="android" name="os" value="android">
+									<label for="ios">iOS</label>
+									<input type="radio" id="ios" name="os" value="ios">
+									<br><br>
+								<label for="mensaje">Tu mensaje</label>
+									<br>
+									<textarea name="Deje su mensaje" id="mensaje" cols="60" rows="10"></textarea>
+									<br>
+									<input type="submit" value="Enviar">
+									<input type="reset" value="Cancelar">
+						</fieldset>
+					</form>
+				</section>
+			</main>
+			<section class="map" id="mapaindex">
+						<h3 class="text-bold ">Nuestras oficinas!</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.6764314737316!2d-68.88555038836466!3d-32.98593754084594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1902eb575290eb5d!2zMzLCsDU5JzA5LjQiUyA2OMKwNTMnMDMuNyJX!5e0!3m2!1ses!2sar!4v1653959947022!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</section>
+			
+			<footer class="pie">
+				<ul>
+					<li>
+						<a href="#">Sobre nosotros</a>
+					</li>
+					<li>
+						<a href="#">Términos del servicio</a>
+					</li>
+					<li>
+						<a href="#">Política de privacidad</a>
+					</li>
+					<li>
+						<a href="#">Desarrolladores</a>
+					</li>
+					<li>
+						<a href="#">Soporte técnico</a>
+					</li>
+					<li>
+						<a href="views/descargas.html">Descargas</a>
+					</li>
+				
+					<a href="https://www.facebook.com" target="blank">
+						<img src="img/fb.png" alt="Facebook logo" width="60" height="40">
+					</a>
+					<a href="https://www.instagram.com" target="blank">
+						<img src="img/ig.png" alt="Instagram logo" width="60" height="40">
+					</a>
+					<a href="httsp://www.linkedin.com" target="blank">
+						<img src="img/ln.png" alt="Linkedin logo" width="60" height="40">
+					</a>
+				</ul>	
+			</footer>
+		</div>	<!-- ends grid_contenedor -->
+	</body>
+</html>

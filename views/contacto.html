@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AUTOHEALTH - Confiá en tu auto!</title>
+		<link rel="icon" type="image/jpg" href="../img/favicon.png"/>
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<nav>
+			<a href="index.html" >
+				<img src="../img/logo.png" alt="Logo de autohealth" class="w-50" >
+			</a>
+			<ul>
+				<li>
+					<a href="../index.html">Inicio</a>
+				</li>
+				<li>
+					<a href="../views/descargas.html">Descargas</a>
+				</li>
+				<li>
+					<a href="../views/contacto.html" class="text-bold text-underline">Contacto</a>
+				</li>
+				<li>
+					<a href="../views/blog.html">Blog</a>
+				</li>	
+				<li>
+					<a href="../views/registrate.html">Registrate</a>
+				</li>	
+			</ul>
+		</nav>
+		<!-- ends nav -->
+		<header >
+			<img src="../img/mechanic-banner.jpg" alt="Imagen heroe" id="img_heroe">
+		</header>
+		<!-- ends head -->
+		<main>
+			<h1 class="margin-left--100">Dejanos tus consulta!</h1>
+
+			<form action="envio.php" class="formulario">
+				<fieldset>
+					<legend class="text-bold">Info personal</legend>
+						<label for="nombre">Nombre y Apellido</label>
+							<input type="text" id="nombre" placeholder="John Doe">
+							<br>
+						<label for="mail">Mail</label>
+							<input type="mail" id="mail" placeholder="correo@ejemplo.com" required>
+				</fieldset>
+				<fieldset>	
+					<legend class="text-bold">Info comercial</legend>
+						<label for="version">Que versión te interesa ?</label>
+							<select name="Qué versión te interesa más?" id="version">
+								<option value="lite">Lite</option>
+								<option value="home">Home</option>
+								<option value="pro">Pro</option>
+							</select><br>
+						<label for="os">Sistema operativo</label>
+							
+						<label for="android">Android</label>
+							<input type="radio" id="android" name="os" value="android">
+						<label for="ios">iOS</label>
+							<input type="radio" id="ios" name="os" value="ios">
+							
+							<br><br>
+						<label for="mensaje">Tu mensaje</label>
+							<br>
+								<textarea name="Deje su mensaje" id="mensaje" cols="60" rows="10"></textarea>
+							<br>
+								<input type="submit" value="Enviar">
+								<input type="reset" value="Cancelar">
+				</fieldset>
+			</form>
+
+		</main>	
+				<footer class="pie">
+			<ul>
+				<li>
+					<a href="#" class="pie__link">Sobre nosotros</a>
+				</li>
+				<li>
+					<a href="#" class="pie__link">Términos del servicio</a>
+				</li>
+				<li>
+					<a href="#" class="pie__link">Política de privacidad</a>
+				</li>
+				<li>
+					<a href="#" class="pie__link">Desarrolladores</a>
+				</li>
+				<li>
+					<a href="#" class="pie__link">Soporte técnico</a>
+				</li>
+				<li>
+					<a href="../views/descargas.html" class="pie__link">Descargas</a>
+				</li>
+			</ul>
+				<a href="https://www.facebook.com" target="blank" class="pie__rrss">
+					<img src="../img/fb.png" alt="Facebook logo" width="60" height="40" class="pie__rrss--s">
+				</a>
+				<a href="https://www.instagram.com" target="blank"class="pie__rrss">
+					<img src="../img/ig.png" alt="Instagram logo" width="60" height="40" class="pie__rrss--s">
+				</a>
+				<a href="httsp://www.linkedin.com" target="blank"class="pie__rrss">
+					<img src="../img/ln.png" alt="Linkedin logo" width="60" height="40" class="pie__rrss--s">
+				</a>
+			
+		</footer>
+	</body>
+</html>

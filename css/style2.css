@@ -1,0 +1,272 @@
+/*
+clases volver a crear: 
+text underline
+img heroe
+contenidoart
+menu (nav y footer)
+map
+formulario (abarca form + titulo)
+pie
+grid_contenedor
+.base (grid para header)
+.main (grid para main)
+.pie (grid para pie)
+
+
+
+Ids volver a crear:  
+ventajas
+formindex (meterlo en la clase formulario)
+mapaindex (meterlo en clase map)
+
+
+
+
+*/
+
+
+
+/* ESTLO GENERAL */
+
+.text-underline {
+text-decoration: underline;
+}
+
+h1 {
+color: #444242;
+font-size: 2rem;
+}
+
+h2,h3 {
+font-weight: 400;
+font-size: 1rem;
+}
+
+.text-bold {
+font-weight: bold;
+}
+
+.text-center {
+text-align: center;
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+font-family: 'Montserrat', sans-serif;
+
+}
+
+body {	
+background-image: url(../img/fondocanva.png);
+background-repeat: repeat;
+background-attachment: fixed;
+}
+
+.logo_nav {
+width: 30vw;
+}
+
+.logo_nav:hover {
+transform: rotateZ(15deg);
+transition: transform 1s;
+}
+
+nav {
+background: linear-gradient(to right, white, blue);
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+nav ul {
+list-style: none;
+display: flex; 
+justify-content: center;
+}
+
+nav ul li a {
+text-decoration: none;
+font-size: 2rem;
+margin: 3px;
+padding: 3px;
+}
+
+nav ul li a:hover{
+
+color: black;
+font-weight: 500;
+border: solid 3px cyan;
+}
+
+footer ul {
+
+list-style: none;
+display: flex; 
+justify-content: space-evenly;
+}
+
+.menu {
+
+display: flex;
+align-content: center;
+justify-content: space-between;
+}
+
+.img_art {
+
+width: 40vw;
+}
+
+#ventajas {
+
+text-align: center;
+font-size: 1.5rem;
+margin: 10px;
+width: 80%;
+}
+
+.formulario {
+
+border: darkblue solid 3px;
+text-align: center;
+font-size: 1.5rem;
+margin: 10px;
+padding: 10px;
+}
+
+
+@keyframes animacion {
+0% {opacity: 1;}
+25% {opacity: 0;}
+50% {opacity: 1;}
+75% {opacity: 0;}	
+100% {opacity: 1;}
+
+}
+
+.animado {
+/* animation: animacion 2s ease 0s infinite normal forwards; */
+animation-name: animacion;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+animation-timing-function: ease;
+animation-duration: 2s;
+}
+
+/* GRID INDEX */
+
+.base {
+grid-area: header;
+
+}
+
+.main {
+grid-area: main;
+background-color: cyan;
+
+
+}
+
+.map {
+
+grid-area: map;
+width: 93%;
+background-color: gray;
+padding: 10px;
+}
+
+.map iframe {
+
+width: 100%;
+}
+
+.pie {
+
+grid-area: footer;
+background-color: cornflowerblue;
+font-size: 1.5rem;
+padding: 5px;
+
+}
+
+.grid_contenedor {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 2fr ;
+	grid-template-rows: 20vh 140vh 10vh ; */
+	grid-template-areas: "header header header" "main main map" "footer footer footer"; 
+	/*grid-gap: 30px;	*/					 
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.grid_contenedor {
+		display: grid;
+		/* grid-template-columns: 1fr;
+		grid-template-rows: 5vh 900h 100vh 20vh ; */
+		grid-template-areas: "header" "main" "map" "footer"; 
+	}
+
+}
+
+
+/*  GRID BLOG */
+
+/* 
+.base {
+	grid-area: header;
+	
+	}
+	
+	.main {
+	grid-area: main;
+	background-color: cyan;
+	
+	
+	}
+	
+	.map {
+	
+	grid-area: map;
+	width: 93%;
+	background-color: gray;
+	padding: 10px;
+	}
+	
+	.map iframe {
+	
+	width: 100%;
+	}
+	
+	.pie {
+	
+	grid-area: footer;
+	background-color: cornflowerblue;
+	font-size: 1.5rem;
+	padding: 5px;
+	
+	}
+	
+	.grid_contenedor {
+		display: grid;
+		/* grid-template-columns: 1fr 1fr 2fr ;
+		grid-template-rows: 20vh 140vh 10vh ; */
+		grid-template-areas: "header header header" "main main map" "footer footer footer"; 
+		/*grid-gap: 30px;	*/					 
+	}
+	
+	@media only screen and (max-width: 1024px) {
+	
+		.grid_contenedor {
+			display: grid;
+			/* grid-template-columns: 1fr;
+			grid-template-rows: 5vh 900h 100vh 20vh ; */
+			grid-template-areas: "header" "main" "map" "footer"; 
+		}
+	
+	} */
