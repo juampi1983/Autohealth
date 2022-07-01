@@ -5,36 +5,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>AUTOHEALTH - Confiá en tu auto!</title>
 		<link rel="icon" type="image/jpg" href="img/favicon.png"/>
+		
+		<!-- Boostrap CSS - bootstrap.min.css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Mi CSS -->
 		<link rel="stylesheet" href="css/style2.css">
 	</head>
 	<body>
 		<div class="grid_contenedor">
 			<header class="base">
-				<nav class="menu">
-					<a href="index.html">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<div class="container-fluid">
+					  <a class="navbar-brand" href="index.html">
 						<img src="img/autohealth_banner.jpg" alt="Logo de autohealth" class="logo_nav">
-					</a>
-					<ul>
-						<li>
-							<a href="index.html" class="text-bold text-underline">Inicio</a>
-						</li>
-						<li>
-							<a href="views/descargas.html">Descargas</a>
-						</li>
-						<li>
-							<a href="views/contacto.html">Contacto</a>
-						</li>
-						<li>
-							<a href="views/blog.html">Blog</a>
-						</li>	
-						<li>
-							<a href="views/registrate.html">Registrate</a>
-						</li>	
-					</ul>
-				</nav>
-				<!-- 	<img src="img/mechanic-banner.jpg" alt="Imagen heroe" id="img_heroe"> -->
-			</header>
-			<!-- ends head -->
+					  </a>
+					  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						  <li class="nav-item">
+							<a class="nav-link" aria-current="page" href="views/descargas.html">Descargas</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="views/contacto.html">Contacto</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link" href="views/blog.html">Blog</a>
+						  </li>
+						  <li class="nav-item">
+							<a class="nav-link " href="views/registrate.html">Registrate</a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </nav>
+
+			</header> <!-- ends head -->
 			<main class="main">
 				<section id="ventajas">
 					<article>
@@ -126,5 +134,9 @@
 				</ul>	
 			</footer>
 		</div>	<!-- ends grid_contenedor -->
+
+		<!-- JS bootstrap.min.js -->
+		<script src="js/bootstrap.min.js"></script>
+
 	</body>
 </html>
